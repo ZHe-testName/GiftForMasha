@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'GamjaFlower';
+  src: url('./fonts/GamjaFlower-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'IndieFlower';
+  src: url('./fonts/IndieFlower-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RubikMoonrocks';
+  src: url('./fonts/RubikMoonrocks-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'BalsamiqSans';
+  src: url('./fonts/BalsamiqSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'BungeeShade';
+  src: url('./fonts/BungeeShade-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'DelaGothicOne';
+  src: url('./fonts/DelaGothicOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratSubrayada';
+  src: url('./fonts/MontserratSubrayada-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Notable';
+  src: url('./fonts/Notable-Regular.ttf');
+}
+@font-face {
+  font-family: 'RubikDirt';
+  src: url('./fonts/RubikDirt-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RampartOne';
+  src: url('./fonts/RampartOne-Regular.ttf');
+}

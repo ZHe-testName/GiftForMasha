@@ -7,6 +7,24 @@
 		<title>Happy Birthday</title>
 	</head>
 	<body>
+		<div class="greeting">
+			<span class="m message-love">I love you</span>
+			<span class="m message-masha">Masha</span>
+			<div class="m bigger">
+				<span class="message-bigger0">Bigger</span>
+				<span class="message-bigger1">and</span>
+				<span class="message-bigger2">bigger</span>
+			</div>
+			<span class="m message-day">every day</span>
+			<span class="m message-inspiration">You're an inspiration</span>
+			<span class="m message-thrill">You thrill</span>
+			<span class="m message-looking">You're what I've always been l<span>oo</span>king for.</span>
+			<span class="m message-being">Thank you for being you</span>
+			<span class="m message-birthday">Happy Birthday, </span>
+			<span class="m message-beloved">Beloved</span>
+			<span class="m message-eugene">Always your, Eugene</span>
+		</div>
+
 		<div class="container">
 			<canvas id="canvas"></canvas>
 
@@ -16,8 +34,11 @@
 		</div>
 		
 		<div class="name">
-				Click To Add Flowers
+			Click Somewhere
 		</div>
+
+		<!-- <script type="module" src="./script.js"></script> -->
+		<script type="module" src="./script1.js"></script>
 
 		<script type="x-shader/x-fragment" id="fragmentShader">
 			#define PI 3.14159265359
@@ -174,7 +195,5 @@
 					gl_Position = vec4(position, 1.);
 			}
 		</script>
-
-		<script type="module" src="./script.js"></script>
 	</body>
 </html>

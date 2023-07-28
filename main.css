@@ -1,7 +1,11 @@
+@import url(./fonts.css);
+@import url(./keyframes.css);
+
 html, body {
   overflow: hidden;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 .container {
   position: fixed;
@@ -13,6 +17,7 @@ html, body {
   flex-direction: column-reverse;
   align-items: start;
   background-color: #000000;
+  z-index: 2;
 }
 .clean-btn {
   z-index: 1;
@@ -46,6 +51,216 @@ canvas {
   text-shadow: 0 0 5px #000000;
   user-select: none;
   pointer-events: none;
+  z-index: 2;
+}
+
+.greeting {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ee4b4b;
+  z-index: 3;
+}
+
+.m {
+  visibility: hidden;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+
+.greeting .message-love {
+  font-family: 'GamjaFlower';
+  font-size: 68px;
+  animation-name: love;
+  animation-duration: 4s;
+  top: 35vh;
+  left: 15vw;
+}
+
+.greeting .message-masha {
+  font-family: 'BungeeShade';
+  font-size: 90px;
+  top: 47vh;
+  left: 43vw;
+  animation-name: masha;
+  animation-duration: 3s;
+  animation-delay: 3.6s;
+}
+
+.greeting .bigger {
+  display: flex;
+  gap: 30px;
+  left: 10vw;
+  bottom: 80px;
+  align-items: flex-end;
+  animation-name: bigger;
+  animation-duration: 3s;
+  animation-delay: 7s;
+}
+
+.greeting .bigger .message-bigger0,
+.greeting .bigger .message-bigger1,
+.greeting .bigger .message-bigger2 {
+  font-family: 'DelaGothicOne';
+  animation-name: bigger-appear;
+  animation-fill-mode: forwards;
+  animation-duration: 0.1s;
+  opacity: 0;
+}
+
+.greeting .message-bigger0 {
+  font-size: 48px;
+  animation-delay: 7.9s;
+}
+
+.greeting .message-bigger1 {
+  font-size: 68px;
+  margin-left: 20px;
+  animation-delay: 8.4s;
+}
+
+.greeting .message-bigger2 {
+  font-size: 152px;
+  margin-left: 35px;
+  animation-delay: 8.9s;
+}
+
+.greeting .message-day {
+  font-family: 'MontserratSubrayada';
+  font-size: 56px;
+  top: -5vh;
+  left: 43vw;
+  color: white;
+  animation-name: every-day;
+  animation-duration: 3s;
+  animation-delay: 10.5s;
+}
+
+.greeting .message-inspiration,
+.greeting .message-thrill {
+  font-family: 'DelaGothicOne';
+  font-size: 48px;
+  top: 38vh;
+  left: -5vw;
+  letter-spacing: 80px;
+  white-space: nowrap;
+  animation-name: inspiration;
+  animation-duration: 3s;
+  animation-delay: 13.5s;
+}
+
+.greeting .message-thrill {
+  animation-delay: 16s;
+  top: 44vh;
+}
+
+.greeting .message-looking {
+  font-family: 'Notable';
+  font-size: 44px;
+  top: 54vh;
+  left: 10vw;
+  animation-name: bigger;
+  animation-duration: 4s;
+  animation-delay: 19s;
+}
+
+.greeting .message-looking > span {
+  font-family: 'Notable';
+  font-size: 42px;
+  top: 54vh;
+  left: 6vw;
+  animation-name: looking;
+  animation-duration: 3.5s;
+  animation-delay: 19s;
+}
+
+.greeting .message-being {
+  font-family: 'IndieFlower';
+  font-size: 52px;
+  top: 32vh;
+  left: 32vw;
+  animation-name: bigger;
+  animation-duration: 5s;
+  animation-delay: 23s;
+}
+
+.greeting .message-being::before {
+  content: '';
+  width: 600%;
+  height: 100%;
+  background-image:
+    linear-gradient(
+      to right, 
+      #ee4b4b,
+      #ee4b4b 20%,
+      transparent,
+      #ee4b4b 80%,
+      #ee4b4b 100%
+    );
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  animation-name: being;
+  animation-duration: 5s;
+  animation-delay: 23s;
+}
+
+.greeting .message-birthday,
+.greeting .message-beloved {
+  font-family: 'RubikMoonrocks';
+  font-size: 90px;
+  top: 55vh;
+}
+
+.greeting .message-birthday {
+  animation-name: birthday;
+  animation-duration: 3.5s;
+  animation-delay: 27s;
+}
+.greeting .message-beloved {
+  animation-name: beloved;
+  animation-duration: 3s;
+  animation-delay: 30s;
+}
+
+.greeting .message-eugene{
+  bottom: 40px;
+  right: 50px;
+  font-family: 'RampartOne';
+  font-size: 62px;
+  animation-name: bigger-appear;
+  animation-duration: 3s;
+  animation-delay: 34s;
+}
+
+.error {
+  font-family: 'IndieFlower';
+  font-size: 24px;
+  margin: 0px auto;
+  display: block;
+  text-align: center;
+  margin-top: 35vh;
+}
+
+@media all and (max-width: 1200px) {
+  .greeting .message-bigger0 {
+    font-size: 38px;
+    animation-delay: 7.9s;
+  }
+  
+  .greeting .message-bigger1 {
+    font-size: 48px;
+    margin-left: 0px;
+    animation-delay: 8.4s;
+  }
+  
+  .greeting .message-bigger2 {
+    font-size: 82px;
+    margin-left: 5px;
+    animation-delay: 8.9s;
+  }
 }
 
 @media all and (min-width: 640px) {

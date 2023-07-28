@@ -55,7 +55,7 @@ container.addEventListener("touchstart", e => {
 cleanBtn.addEventListener("click", cleanCanvas);
 
 function cleanCanvas(e) {
-    e.stopPropagation();
+    e?.stopPropagation();
 
     pointer.vanishCanvas = true;
     setTimeout(() => {

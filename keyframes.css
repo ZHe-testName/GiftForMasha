@@ -1,0 +1,155 @@
+@keyframes love {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  40% {
+    opacity: 1;
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    transform: rotateZ(1275deg) scale(0);
+    display: none;
+  }
+}
+
+@keyframes masha {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    font-size: 742px;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+    font-size: 92px;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes bigger {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    display: none;
+  }
+}
+
+@keyframes bigger-appear {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes every-day {
+  0% {
+    visibility: visible;
+    top: -5vh;
+    opacity: 0;
+  }
+  5% {
+    top: 20vh;
+    opacity: 0.3;
+  }
+  80% {
+    top: 52vh;
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 110vh;
+    display: none;
+  }
+}
+
+@keyframes inspiration {
+  0% {
+    visibility: visible;
+    left: -5vw;
+    letter-spacing: 80px;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  90% {
+    left: 38vw;
+    letter-spacing: 3px;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes looking {
+  0% {
+    font-size: 42px;
+  }
+  80% {
+    font-size: 88px;
+  }
+  100% {
+    font-size: 42px;
+  }
+}
+
+@keyframes being {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(80%);
+  }
+}
+
+@keyframes birthday {
+  0% {
+    transform: translateX(-100vw);
+    visibility: visible;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(15vw);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes beloved {
+  0% {
+    transform: translateX(120vw);
+    visibility: visible;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(40vw);
+    opacity: 0;
+    display: none;
+  }
+}
