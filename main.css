@@ -75,6 +75,7 @@ canvas {
   font-size: 68px;
   animation-name: love;
   animation-duration: 4s;
+  animation-delay: 1s;
   top: 35vh;
   left: 15vw;
 }
